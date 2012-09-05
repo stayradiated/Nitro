@@ -15,6 +15,9 @@ ui.language({
 	//Default Names
 	nlist: "Uusi lista",
 	ntask: "Uusi tehtävä",
+	
+	// Search Result Header
+	searchResults: "Search results",
 
 	//Buttons
 	addbtn: "Lisää",
@@ -36,6 +39,7 @@ ui.language({
 	//Placeholder Text
 	search: "Hae",
 	notes: "Huomautukset",
+	tags: "Tags, separated by a comma",
 
 	//Priority
 	none: "Ei mitään",

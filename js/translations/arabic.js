@@ -11,7 +11,10 @@ ui.language({
 	// Empty List Filler Text
 	noTasksInList: "No Tasks in %s",
 	thisList: "This List",
-
+	
+	// Search Result Header
+	searchResults: "البحث نتائج",
+	
 	//Default Names
 	nlist: "قائمة جديدة",
 	ntask: "مهمة جديدة",
@@ -36,6 +39,7 @@ ui.language({
 	//Placeholder Text
 	search: "البحث",
 	notes: "ملاحظات",
+	tags: "Tags, separated by a comma",
 
 	//Priority
 	none: "لا شيء",
