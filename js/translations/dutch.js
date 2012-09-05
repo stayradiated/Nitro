@@ -11,6 +11,9 @@ ui.language({
 	// Empty List Filler Text
 	noTasksInList: "Geen taken in %s",
 	thisList: "Dit lijstje",
+	
+	// Search Result Header
+	searchResults: "Search results",
 
 	//Default Names
 	nlist: "Nieuw lijstje",
@@ -36,6 +39,7 @@ ui.language({
 	//Placeholder Text
 	search: "Zoeken",
 	notes: "Notities",
+	tags: "Tags, separated by a comma",
 
 	//Priority
 	none: "Geen",
