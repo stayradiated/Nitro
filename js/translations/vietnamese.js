@@ -13,7 +13,7 @@ ui.language({
 	thisList: "Danh sách này",
 	
 	// Search Result Header
-	searchResults: "Search results",
+	searchResults: "Kết quả tìm kiếm",
 
 	//Default Names
 	nlist: "Danh sách mới",
@@ -39,7 +39,7 @@ ui.language({
 	//Placeholder Text
 	search: "Tìm kiếm",
 	notes: "Ghi chú",
-	tags: "Tags, separated by a comma",
+	tags: "Thẻ, cách nhau bằng dấu phẩy",
 
 	//Priority
 	none: "Không",
@@ -172,7 +172,7 @@ ui.language({
 	dark:"Tối",
 	headingDescription:	"Thay đổi màu chữ cho phù hợp với hình nền.",
 	sync: "Đồng bộ",
-	syncChoose: "Choose a service to setup Nitro Sync",
+	syncChoose: "Chọn dịch vụ hỗ trợ Nitro Sync",
 	createAccount: "Tạo tài khoản",
 
 	donateText:	"Tính năng này đang trong giai đoạn thử nghiệm. Nó làm việc tốt trong hầu hết các trường hợp, nếu có vấn đề gì xảy ra xin hãy liên hệ với <a href='https://twitter.com/GeorgeCzabania'>@GeorgeCzabania</a> hoặc <a href='https://twitter.com/consindo'>@consindo",
