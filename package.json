@@ -5,14 +5,15 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --colors --mode production --display-optimization-bailout",
     "report": "cross-env NODE_ENV=report webpack --progress --colors --mode production --display-optimization-bailout",
-    "watch": "webpack-dev-server",
+    "watch": "webpack-dev-server --mode development",
     "clean": "rm -rf dist/generated/*",
     "test": "cross-env NODE_ENV=test nyc mocha nitro.sdk.test/index.js && npm run build",
     "test:fast": "cross-env NODE_ENV=test mocha nitro.sdk.test/index.js --require babel-core/register",
     "prepublishOnly": "npm run clean && npm run build",
     "flow": "flow",
     "docker-push-master": "docker login -u \"$DOCKER_USERNAME\" -p \"$DOCKER_PASSWORD\" && docker push dymajo/nitro-client:latest",
-    "ssh-remote": "ssh -o StrictHostKeyChecking=no $SSH_HOSTNAME bash nitro/deploy.sh"
+    "ssh-remote": "ssh -o StrictHostKeyChecking=no $SSH_HOSTNAME bash nitro/deploy.sh",
+    "prettier": "prettier"
   },
   "repository": {
     "type": "git",
@@ -47,10 +48,13 @@
     "babel-plugin-transform-react-jsx": "^6.22.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
     "cross-env": "^5.1.4",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.0",
+    "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "fake-indexeddb": "^2.0.4",
@@ -63,6 +67,7 @@
     "node-sass": "^4.8.2",
     "nyc": "^11.6.0",
     "offline-plugin": "^4.9.0",
+    "prettier": "^1.11.1",
     "resolve-url-loader": "^2.3.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
@@ -72,13 +77,23 @@
     "webpack-dev-server": "^3.1.1"
   },
   "dependencies": {
+    "babel-plugin-react-native-web": "^0.5.3",
     "idb-keyval": "^2.4.1",
     "imports-loader": "^0.8.0",
     "intersection-observer": "^0.5.0",
     "pikaday": "^1.7.0",
     "preact": "^8.2.7",
     "preact-router": "^2.6.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.0",
+    "react-beautiful-dnd": "^6.0.2",
+    "react-day-picker": "^7.1.6",
+    "react-dom": "^16.3.0",
+    "react-native-web": "^0.5.3",
+    "react-router-dom": "^4.2.2",
+    "react-transition-group": "^2.3.0",
     "resize-observer-polyfill": "^1.5.0",
+    "smoothscroll-polyfill": "^0.4.3",
     "webpack-bundle-analyzer": "^2.11.1"
   }
 }
